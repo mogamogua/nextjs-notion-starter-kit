@@ -6,7 +6,7 @@ export default siteConfig({
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: null,
+  rootNotionSpaceId: '18c4ba98-0232-45d4-9611-3698953674d1',
 
   // basic site info (required)
   name: 'Jisu in Wonderland',
