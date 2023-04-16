@@ -8,8 +8,8 @@
  */
 
 .notion {
-  --notion-max-width: 720px;
-  --notion-header-height: 54px;
+  --notion-max-width: 45rem;
+  --notion-header-height: 3.75rem;
 }
 
 .notion-frame {
@@ -27,6 +27,16 @@
 
 .notion-text {
   padding: 0.5em 2px;
+}
+
+.notion-page-title-text {
+  border-bottom: 0;
+  font-size: 0.875rem;
+}
+
+.notion-page-link {
+  border-radius: 0.25rem;
+  padding: 0.25rem;
 }
 
 .notion-asset-caption {
@@ -53,9 +63,9 @@
 }
 
 .notion-gallery-grid {
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  grid-gap: 6vmin;
-  gap: 6vmin;
+  grid-template-columns: repeat(auto-fill, minmax(33%, 300px));
+  gap: 1vmin;
+  padding-top: 1.5rem;
 }
 
 .notion-gallery-grid .notion-page-icon-inline {
@@ -63,8 +73,9 @@
 }
 
 .notion-gallery-grid .notion-page-title-text {
-  font-size: 2em;
-  white-space: unset;
+  font-size: 0.875rem;
+  white-space: pre-line;
+  border-bottom: none;
 }
 
 .notion-gallery-grid .notion-collection-card-property {
@@ -77,35 +88,24 @@
 }
 
 .notion-collection-card {
-  border-radius: 16px;
+  border-radius: 0.5rem;
   box-shadow: none;
-}
-
-.notion-collection-card-cover img {
-  border-radius: 16px;
-}
-
-.notion-collection-card {
   overflow: visible;
-}
-
-.notion-collection-card-cover {
-  border-radius: 16px;
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
 }
 
 .notion-collection-card-cover {
   border-bottom: 0 none;
   transition: filter 150ms linear;
-  filter: none;
+  border-radius: 0.5rem;
+
+  img {
+    border-radius: 0.5rem;
+  }
 }
 
 .notion-collection-card:hover .notion-collection-card-cover {
-  filter: brightness(120%);
-}
-
-.notion-collection-card-body {
-  padding: 10px;
+  transition: all 0.22s ease;
+  transform: translateY(-6px);
 }
 
 /* only target safari */
@@ -140,23 +140,31 @@
   margin: 2em 0;
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1023px) {
   .index-page.notion-page {
     padding-left: 2vw;
     padding-right: 2vw;
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   .notion-page {
     padding-left: 2vw;
     padding-right: 2vw;
   }
+  .notion-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   .notion-search-button {
     display: none !important;
+  }
+
+  .notion-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 
