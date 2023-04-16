@@ -60,7 +60,7 @@
 .token.property,
 .token.symbol,
 .token.tag {
-  color: rgba(16, 185, 129, 1);
+  color: rgb(57, 209, 159);
 }
 .token.attr-name,
 .token.builtin,
@@ -68,23 +68,23 @@
 .token.inserted,
 .token.selector,
 .token.string {
-  color: rgba(139, 92, 246, 1);
+  color: rgb(143, 104, 235);
 }
 .language-css .token.string,
 .style .token.string,
 .token.entity,
 .token.operator,
 .token.url {
-  color: rgba(245, 158, 11, 1);
+  color: rgb(211, 143, 26);
 }
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: rgba(59, 130, 246, 1);
+  color: rgb(103, 159, 248);
 }
 .token.class-name,
 .token.function {
-  color: rgba(236, 72, 153, 1);
+  color: rgb(219, 85, 152);
 }
 .token.important,
 .token.regex,
