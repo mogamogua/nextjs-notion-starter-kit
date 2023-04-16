@@ -1,18 +1,18 @@
 /* prism theme adjustments */
 
 .notion-code {
-  background-color: rgba(249, 250, 251, 1);
+  background-color: rgb(59, 59, 60);
   border: 1px solid rgba(229, 231, 235, 1);
   border-radius: 0.375rem;
   padding: 1.5em !important;
 }
 
 .dark-mode .notion-code {
-  background-color: rgba(17, 24, 39, 1);
-  border-color: rgba(55, 65, 81, 1);
+  background-color: #1a1e20;
+  border-color: #101314;
 }
 .notion code {
-  color: rgba(31, 41, 55, 1);
+  color: rgb(201, 201, 201);
   border: 0 none !important;
   box-shadow: none !important;
   background: none !important;
@@ -40,7 +40,7 @@
   color: rgba(55, 65, 81, 1);
 }
 .token.comment {
-  color: #5b9b4c;
+  color: #a0a9bc;
 }
 .dark-mode .token.cdata,
 .dark-mode .token.doctype,
@@ -51,24 +51,30 @@
   color: rgba(55, 65, 81, 1);
 }
 .dark-mode .token.punctuation {
-  color: rgba(209, 213, 219, 1);
+  color: rgb(206, 159, 41);
 }
 .token.boolean,
 .token.constant,
 .token.deleted,
 .token.number,
 .token.property,
-.token.symbol,
-.token.tag {
-  color: rgb(57, 209, 159);
+.token.symbol {
+  color: rgb(120, 139, 235);
 }
-.token.attr-name,
+.token.tag {
+  color: #dc6c6c;
+}
 .token.builtin,
 .token.char,
 .token.inserted,
 .token.selector,
 .token.string {
-  color: rgb(143, 104, 235);
+  color: rgb(237, 187, 61);
+}
+
+.token.attr-name,
+.token.keyword {
+  color: #4eb2d1;
 }
 .language-css .token.string,
 .style .token.string,
@@ -77,14 +83,16 @@
 .token.url {
   color: rgb(211, 143, 26);
 }
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-  color: rgb(103, 159, 248);
+.token.atrule {
+  color: #1bbda9;
+}
+
+.token.attr-value {
+  color: rgb(247, 246, 232);
 }
 .token.class-name,
 .token.function {
-  color: rgb(219, 85, 152);
+  color: #75b22f;
 }
 .token.important,
 .token.regex,
