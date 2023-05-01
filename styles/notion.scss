@@ -7,6 +7,18 @@
  * places to add some flare.
  */
 
+.dark-mode .notion {
+  --notion-default-text: rgb(182, 181, 181);
+  --notion-brown-text: rgb(242, 191, 165);
+  --notion-red-text: rgb(251, 180, 187);
+  --notion-pink-text: rgb(252, 191, 227);
+  --notion-orange-text: rgb(255, 208, 179);
+  --notion-yellow-text: rgb(242, 211, 133);
+  --notion-green-text: rgb(178, 255, 240);
+  --notion-blue-text: rgb(182, 217, 248);
+  --notion-purple-text: rgb(211, 182, 255);
+}
+
 .notion {
   --notion-max-width: 45rem;
   --notion-header-height: 3.75rem;
@@ -18,38 +30,63 @@
   --notion-item-red: rgba(255, 0, 26, 0.08);
   --notion-item-yellow: rgba(233, 168, 0, 0.08);
   --notion-item-default: rgba(206, 205, 202, 0.1);
+  --notion-item-gray: rgba(155, 154, 151, 0.12);
+
+  --notion-red: rgb(224, 62, 62);
+  --notion-pink: rgb(207, 15, 130);
+  --notion-blue: rgb(0, 106, 193);
+  --notion-purple: rgb(100, 44, 184);
+  --notion-teal: rgb(29, 127, 92);
+  --notion-yellow: rgb(198, 157, 21);
+  --notion-orange: rgb(210, 101, 5);
+  --notion-brown: rgb(117, 71, 50);
+  --notion-gray: #a4a4a4;
+
+  --notion-default-text: rgb(148, 147, 146);
+  --notion-brown-text: rgba(140, 46, 0, 0.7);
+  --notion-red-text: rgba(255, 0, 26, 0.7);
+  --notion-pink-text: rgba(221, 0, 129, 0.7);
+  --notion-orange-text: rgba(245, 93, 0, 0.7);
+  --notion-yellow-text: rgba(205, 147, 1, 0.8);
+  --notion-green-text: rgba(0, 135, 107, 0.7);
+  --notion-blue-text: rgba(0, 120, 223, 0.7);
+  --notion-purple-text: rgba(82, 23, 171, 0.8);
 }
 
 .notion-item-default {
-  color: rgb(148, 147, 146);
-}
-
-.notion-item-pink {
-  color: rgba(221, 0, 129, 0.7);
-}
-
-.notion-item-blue {
-  color: rgba(0, 120, 223, 0.7);
-}
-
-.notion-item-orange {
-  color: rgba(245, 93, 0, 0.7);
-}
-
-.notion-item-green {
-  color: rgba(0, 135, 107, 0.7);
+  color: var(--notion-default-text);
 }
 
 .notion-item-brown {
-  color: rgba(140, 46, 0, 0.7);
+  color: var(--notion-brown-text);
 }
 
 .notion-item-red {
-  color: rgba(255, 0, 26, 0.7);
+  color: var(--notion-red-text);
+}
+
+.notion-item-pink {
+  color: var(--notion-pink-text);
+}
+
+.notion-item-orange {
+  color: var(--notion-orange-text);
 }
 
 .notion-item-yellow {
-  color: rgba(205, 147, 1, 0.8);
+  color: var(--notion-yellow-text);
+}
+
+.notion-item-green {
+  color: var(--notion-green-text);
+}
+
+.notion-item-blue {
+  color: var(--notion-blue-text);
+}
+
+.notion-item-purple {
+  color: var(--notion-purple-text);
 }
 
 .notion-frame {
@@ -107,13 +144,13 @@
   gap: 0.5rem;
 }
 
-.notion-collection-header-title {
-  color: rgb(44 43 39);
-}
-
 .notion-property-multi_select-item {
   height: unset;
   padding: 0.25rem 0.375rem;
+}
+
+.notion-property-created_time {
+  color: #c4c4c4;
 }
 
 .notion-gallery-grid {
@@ -140,7 +177,6 @@
   }
 
   & .notion-page-title-text {
-    color: var(--fg-color-icon);
     font-size: 0.875rem;
     white-space: pre-line;
     border-bottom: none;
@@ -152,10 +188,6 @@
 
     &:has(.notion-property-created_time) {
       margin-top: 0.5rem;
-    }
-
-    & .notion-property-created_time {
-      color: var(--fg-color-3);
     }
   }
 
@@ -271,15 +303,15 @@
 .notion-title {
   display: block;
   text-align: center;
-  color: #343434;
   font-weight: 700;
 }
 
 .notion-block-d5d60e83003c47a9b62b96e0fac14d73 {
   & .notion-title {
     color: #accae1;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
+    letter-spacing: -0.2px;
   }
 }
 
@@ -396,8 +428,8 @@
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
-    #f5b8d1 10.5%,
-    #f9bcd3 85.29%,
+    #f3c8f7 10.5%,
+    #f3c8f7 85.29%,
     var(--bg-color)
   );
 }
@@ -408,8 +440,8 @@
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
-    #adedfc 10.5%,
-    #adebfd 85.29%,
+    #c2e8f3 10.5%,
+    #c2e8f3 85.29%,
     var(--bg-color)
   );
 }
@@ -420,8 +452,8 @@
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
-    #f5c4ff 10.5%,
-    #e7a8fc 85.29%,
+    #ffced8 10.5%,
+    #ffced8 85.29%,
     var(--bg-color)
   );
 }
@@ -431,8 +463,8 @@
   background-image: linear-gradient(
     119deg,
     var(--bg-color),
-    #d4eabc 10.5%,
-    #d2eabc 85.29%,
+    #bceaca 10.5%,
+    #bceaca 85.29%,
     var(--bg-color)
   );
 }
@@ -462,6 +494,10 @@
   margin: 0;
   border-radius: 0;
   background: none !important;
+}
+
+.dark-mode .notion .notion-inline-code {
+  color: #9d99fd !important;
 }
 
 /* if you don't want rounded page icon images, remove this */
