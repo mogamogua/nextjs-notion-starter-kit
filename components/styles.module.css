@@ -86,7 +86,7 @@
 }
 
 .toggleDarkMode:hover {
-  color: #e1e927;
+  color: #eceeac;
   filter: drop-shadow(0 0 0.75rem);
   transition: 600ms;
 }
@@ -112,7 +112,7 @@
 }
 
 .linkedin:hover {
-  color: #0077b5;
+  color: #b4cedb;
 }
 
 .newsletter:hover {

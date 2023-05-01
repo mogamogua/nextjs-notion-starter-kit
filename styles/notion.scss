@@ -8,6 +8,9 @@
  */
 
 .dark-mode .notion {
+  --bg-color: #232425;
+  --bg-color-0: #313436;
+
   --notion-default-text: rgb(182, 181, 181);
   --notion-brown-text: rgb(242, 191, 165);
   --notion-red-text: rgb(251, 180, 187);
@@ -25,6 +28,8 @@
   --fg-color-4: rgba(255, 255, 255, 0.7);
   --fg-color-5: rgba(255, 255, 255, 0.024);
   --fg-color-6: rgba(255, 255, 255, 0.8);
+
+  --box-shadow-card: 0px 10px 20px rgba(205, 205, 205, 0.09);
 }
 
 .notion {
@@ -59,6 +64,8 @@
   --notion-green-text: rgba(0, 135, 107, 0.7);
   --notion-blue-text: rgba(0, 120, 223, 0.7);
   --notion-purple-text: rgba(82, 23, 171, 0.8);
+
+  --box-shadow-card: 0px 10px 20px rgba(13, 26, 38, 0.12);
 }
 
 .notion-item-default {
@@ -227,7 +234,7 @@
     & .notion-collection-card-cover {
       transition: all 0.22s ease;
       transform: translateY(-6px);
-      box-shadow: 0px 10px 20px rgba(13, 26, 38, 0.12);
+      box-shadow: var(--box-shadow-card);
 
       @media only screen and (max-width: 576px) {
         height: 14rem;
