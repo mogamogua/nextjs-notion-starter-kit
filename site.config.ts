@@ -54,5 +54,5 @@ export default siteConfig({
       pageId: '876698185ebf4947864e345bec605e35'
     }
   ],
-  linkedin: 'b80abb231'
+  linkedin: '지수-김-b80abb231'
 })
