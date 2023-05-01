@@ -17,6 +17,14 @@
   --notion-green-text: rgb(178, 255, 240);
   --notion-blue-text: rgb(182, 217, 248);
   --notion-purple-text: rgb(211, 182, 255);
+
+  --fg-color-0: rgba(255, 255, 255, 0.09);
+  --fg-color-1: rgba(255, 255, 255, 0.16);
+  --fg-color-2: rgba(255, 255, 255, 0.4);
+  --fg-color-3: rgba(255, 255, 255, 0.6);
+  --fg-color-4: rgba(255, 255, 255, 0.7);
+  --fg-color-5: rgba(255, 255, 255, 0.024);
+  --fg-color-6: rgba(255, 255, 255, 0.8);
 }
 
 .notion {
@@ -301,6 +309,7 @@
 }
 
 .notion-title {
+  font-size: 2rem;
   display: block;
   text-align: center;
   font-weight: 700;
